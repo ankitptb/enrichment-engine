@@ -51,8 +51,7 @@ export function formatEnrichedResponse(data: any) {
   // -------------------------
   const communitySuggestions = enriched.community_suggestions || [];
 
-  return [
-    {
+  return {
       enriched_data: {
         user: cleanedUser,
         organization: cleanedOrg,
@@ -68,9 +67,8 @@ export function formatEnrichedResponse(data: any) {
       raw_data: raw,
       metadata: {
         processed_at: new Date().toISOString(),
-        enrichment_version: "v2",
+        enrichment_version: "v3",
         ai_model: "gemini",
       }
-    }
-  ];
+    };
 }

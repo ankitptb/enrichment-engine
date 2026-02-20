@@ -9,4 +9,8 @@ export const env = {
   apolloBaseUrl: process.env.APOLLO_BASE_URL!,
   geminiApiBase: process.env.GEMINI_API_BASE!,
   geminiModel: process.env.GEMINI_MODEL!,
+  apiAccessToken: process.env.API_ACCESS_TOKEN!,
+  cliqWebhookUrl: process.env.CLIQ_WEBHOOK_URL!,
+  supabaseUrl: process.env.SUPABASE_URL!,
+  supabaseKey: process.env.SUPABASE_SERVICE_ROLE!
 };

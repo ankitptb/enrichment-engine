@@ -24,7 +24,8 @@ export async function runEnrichment(input: {
     raw_data: rawData,
     metadata: {
       processed_at: new Date().toISOString(),
-      enrichment_version: "v1"
+      enrichment_version: "v2",
+      ai_model: "gemini"
     }
   };
 }
